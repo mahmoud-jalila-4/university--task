@@ -1,0 +1,217 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+:root{
+--main-color:#353943;
+--gold-color:rgba(255, 166, 0, 0.525);
+}
+::-webkit-scrollbar{
+    width: 20px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: var(--gold-color);
+    border-radius:20px ;
+}
+body{
+    background-color: black ;
+}
+a{
+    text-decoration: none;
+}
+.link:hover{
+    color: goldenrod !important;
+    transition: .7s;
+}
+input{
+    font-size: 17px;
+    border-radius: 20px;
+    border: none;
+    padding:  5px 15px ;
+    width: 200px;
+    outline: 0;
+    background-color: var(--main-color);
+}
+header{
+    height:120px ;
+    position: fixed;
+    width: 100%;
+    z-index: 5;
+    background-color: black !important;
+    box-shadow: 3px 3px 500px rgba(255, 166, 0, 0.525);
+    font-family: "Parkinsans", sans-serif;
+    opacity: .7;
+}
+.logo-gold{
+    width: 70px;
+    height: 90px;
+
+}
+header nav .navLins {
+    color: var(--main-color) !important ;
+}
+header nav .active {
+    color: goldenrod !important ;
+}
+header nav .navLins:hover{
+    color: goldenrod !important;
+    transition: .7s;
+    transform: scale(1.1) !important;
+}
+.nav-right input:focus{
+    background-color: goldenrod;
+}
+.navbar .navbar-toggler{
+    color: rgb(255, 255, 255);
+    border: 0;
+    outline: 0;
+    box-shadow: none;
+}
+.navbar .navbar-toggler svg{
+    transition: .5s;
+}
+.navbar .navbar-toggler[aria-expanded="true"] svg{
+    transform: rotate(90deg);
+}
+/* start landing */
+.landing{
+    min-height: calc(100vh - 120px);
+}
+.main-img img{
+    width: 100%;
+    height: 100vh ;
+}
+/* end landing */
+/* start about */
+.about{
+    min-height: 80vh;
+}
+
+.about .img{
+    width: 500px;
+    height: 500px;
+    border-radius: 50px;
+}
+.about .img img {
+    border-radius: 50px;
+    width: 100%;
+    height: 100%;
+}
+.about .text p{
+    font-size: 22px;
+    letter-spacing: 2px;
+}
+/* end about */
+/* start shop */
+.card{
+    border-color: var(--main-color);
+    background-color: #000000;
+    box-shadow: 3px 3px 15px var(--gold-color);
+    position: relative;
+}
+
+.card-icon{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    transition: .5s ease all;
+    color: rgb(131, 122, 122);
+    cursor: pointer;
+}
+.card-icon:hover{
+    color: red;
+}
+.card-img{
+    width: 100%;
+    height: 350px;
+    border-radius: 13px;
+}
+
+.main-btn{
+    background-color:var(--main-color) ;
+    letter-spacing: 2px;
+    position: relative;
+    z-index: 1;
+    transition: .7s ease all;
+    cursor: pointer;
+    border-radius: 20px;
+}
+.main-btn::before{
+    content:"";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 100%;
+    background-color: var(--gold-color);
+    z-index: -1;
+    border-radius: 20px;
+}
+.main-btn:hover:before{
+    transition: .7s all  ease;
+    left: 0;
+}
+.price{
+    color: white;
+    position: absolute;
+    right: 2rem;
+    bottom: 2rem;
+    background-color: var(--main-color);
+    border-radius: 25px;
+    padding: 8px 0;
+}
+/* end shop */
+/* start review */
+.review .review-box {
+    box-shadow: 3px 3px 15px var(--gold-color) !important;
+}
+.review .box .info img{
+    width: 20%;
+    margin-right: 10px;
+}
+.review p {
+    letter-spacing: 2px;
+
+}
+/* end review */
+/* start footer */
+footer{
+    box-shadow: 3px 3px 15px var(--gold-color);
+}
+.footer-img{
+    width: 70px;
+    height: 110px;
+    position: absolute;
+    left: 50%;
+    top: 15%;
+    transform:translate(-50%,-50%);
+}
+footer .info-span{
+    color: var(--gold-color);
+}
+footer .links ul li:hover{
+    color: white;
+    transform: scale(1.2);
+    transition: .4s all ease-in-out;
+}
+footer .facebook{
+    background-color: #1877f2;
+}
+footer .twitter{
+    background-color:#1da1f2 ;
+}
+footer .linkedin{
+    width: 25px;
+    height: 25px;
+    background-color:#0a66c2 ;
+}
+footer .youtube{
+    background-color:#ff0000 ;
+}
+footer .facebook:hover,.twitter:hover,.linkedin:hover,.youtube:hover{
+    transition: .3s;
+    transform: scale(1.3) !important;
+}
+/* end footer */

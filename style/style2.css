@@ -1,0 +1,129 @@
+.cart{
+    display: flex;
+    background-color: var(--gray-color);;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-radius: 3px;
+    width: 70px;
+    position: relative;
+}
+.cart:hover{
+    color: goldenrod !important;
+    transition: .7s;
+}
+.cart .fa-cart-shopping{
+    font-size: 25px;
+}
+.cart p{
+    height: 20px;
+    width: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    background-color:goldenrod;
+    color: black;
+    position: absolute;
+    right: 12px;
+    bottom: -10px;
+}
+/* ////////////////////////////////////////////////////////////////////////////////////// */
+
+/* The side navigation menu */
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 99999999; /* Stay on top */
+    top: 0; /* Stay at the top */
+    right: 0;
+    background-color: black; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+    text-align: center;
+}
+
+.sidenav .closebtn {
+    color: red !important;
+    font-weight: bolder;
+    transition: 0.7s;
+    left: -30px;
+    position: absolute;
+    top: 0;
+    font-size: 36px;
+    margin-left: 50px;
+}
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+/* //////////////////////////////////////////////////////// */
+
+.sidebar{
+    width: 90%;
+    border-radius: 5px;
+    background-color: #eee;
+    margin: 0 5%;
+    padding: 15px;
+    text-align: center;
+}
+.sidebar .head{
+    background-color:goldenrod;
+    border-radius: 3px;
+    height: 40px;
+    padding: 10px;
+    margin-bottom: 20px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+}
+.sidebar .foot{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0px;
+    padding: 10px 0px;
+    border-top: 2px solid #333;
+}
+
+.sidebar h2{
+    font-size: 20px;
+    color:goldenrod;
+    font-weight: bold;
+}
+
+ .cart-items{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: white;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    margin: 10px 10px;
+}
+ .row-img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+    border: 1px solid goldenrod;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.rowimg{
+    max-width: 60px;
+    min-width: 60px;
+    min-height: 55px;
+    max-height: 55px;
+    border-radius: 50%;
+}
+.fa-trash{
+    color: goldenrod;
+}
+ .fa-trash:hover{
+    cursor: pointer;
+    color:red;
+}

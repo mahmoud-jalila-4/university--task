@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style/all.css">
+        <link rel="stylesheet" href="style/all.min.css">
+        <link rel="stylesheet" href="style/bootstrap.min.css">
+        <link rel="stylesheet" href="style/style.css">
+        <link rel="stylesheet" href="style/style2.css">
+        <title>ANER</title>
+    </head>
+    <body>
+        <!-- start navbar -->
+        <header >
+            <nav class="navbar navbar-expand-lg position-relative ">
+                <div class="container-fluid d-flex flex-wrap align-items-center justify-content-between">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="text-white fa-solid fa-bars"></i>
+                    </button>
+                    <div class="nav-logo navbar-brand ">
+                        <img class="logo-gold" src="img/logo-gold.png" alt="">
+                    </div>
+                    <div class="  collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 ps-3 fs-4 text-uppercase">
+                            <li class="nav-item">
+                                <a class="navLins  nav-link p-3  active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="navLins  nav-link p-3 " href="#about">about</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="navLins  nav-link p-3 " href="#shop">shop</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="navLins  nav-link p-3  " href="#review">reviews</a>
+                            </li>
+                        </ul>
+                        <div class="nav-right  my-4" >
+                            <input type="search" placeholder="Search">
+                            <a class=" navLins nav-right-link p-2 fs-5" href="#"><i class="fa-solid  fa-magnifying-glass"></i></a>
+                            <a class=" navLins  nav-right-link p-2 fs-5" href="#"><i class="fa-solid  fa-user"></i></a>
+                        </div>
+                        <div class="cart   "onclick="openNav()"  ><i class="fa-solid fa-cart-shopping" ></i><p id="count" >0</p></div>
+                        <!-- كود الكارت بتاع ال side -->
+                        <div id="mySidenav" class="sidenav">
+                            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                            <div class="sidebar">
+                                <div class="head"><p>My Cart</p></div>
+                                <div id="cartItem">Your cart is empty</div>
+                                <div class="foot ">
+                                    <h3>Total</h3>
+                                    <h2 id="total">$ 0.00</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /////نهايه كود الكارت -->
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <!-- end navbar -->
+        <!-- start main -->
+        <main class="landing">
+            <div class="container-fluid">
+                <div class="main-img">
+                    <img src="img/Landing.jpg" alt="">
+                </div>
+            </div>
+        </main>
+        <!-- end main -->
+        <!-- start about -->
+        <div class="about mt-5 pt-5" id="about">
+            <div class="container pt-5">
+                <div class="row d-flex align-items-center justify-content-center">
+                    <div class="img col-12 col-md-6 mb-4">
+                        <img src="img/about.jpg" >
+                    </div>
+                    <div class="text col-12 col-md-6 px-5 ms-5">
+                        <h1 class=" text-white-50 text-center fw-bold text-uppercase mb-4"> about us</h1>
+                        <p class=" text-white-50 ">Lorem, ipsum dolor sit amet  voluptas atque aliquid enim error. Consequatur beatae sit sunt alias repudiandae laboriosam um dolor sit amet consectetur adipisicing elit. Tempora odio dolorum voluptas atque aliquid enim error. Consequatur beatae sit sunt alias repudiandae laboriosam expedita modi voluptaexpedita modi voluptatem officia, repellat debitis quasi!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end about -->
+        <!-- start shop -->
+        <div class="shop mt-5 pt-5" id="shop">
+            <div class="container ">
+                <h2 class="text-center fw-bold text-white-50  my-5 link "> COLLECTION</h2>
+                <div class="row " id="root">
+                </div>    
+            </div>
+            
+        </div>
+        <!-- end shop -->
+        <!-- start reviews  -->
+        <section class="review py-5 text-white-50 my-5" id="review">
+                <div class="container ">
+                <h2 class="text-center fw-bolder text-white-50 text-uppercase link"> Reviews</h2>
+                <div class="row pt-5">
+                    <div class="col-lg-4 col-md-6 mb-4">
+                    <div class=" review-box box  p-4 rounded-3 me-4">
+                        <div class="info  d-flex align-items-center mb-2 ">
+                        <img class="rounded-circle  " src="img/user1.png" alt="">
+                        <div class="text me-2">
+                        <h5 class="fw-bold text-capitalize">  mohamed ali</h4>
+                        <span> Special Customer</span>
+                        </div>
+                        </div>
+                        <p class="text-white-50 mt-3">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe voluptas nobis error incidunt ipsam, velit sunt repellendus, nam omnis consectetur cumque. Est, totam libero explicabo sed eligendi cumque delectus rerum!
+                        </p>
+                        <div class="stars mt-5 d-flex align-items-center justify-content-end">
+                        <img src="img/star.svg" alt="">
+                        <img src="img/star.svg" alt="">
+                        <img src="img/star.svg" alt="">
+                        <img src="img/star.svg" alt="">
+                        <img src="img/star.svg" alt="">
+                        </div>
+                    </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-4">
+                    <div class=" review-box box shadow p-4 rounded-3 me-4">
+                        <div class="info  d-flex align-items-center mb-2 ">
+                        <img class="rounded-circle  " src="img/user1.png" alt="">
+                        <div class="text me-2">
+                        <h5 class="fw-bold text-capitalize">  mohamed ali</h4>
+                        <span> Special Customer</span>
+                        </div>
+                        </div>
+                        <p class="text-white-50 mt-3">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe voluptas nobis error incidunt ipsam, velit sunt repellendus, nam omnis consectetur cumque. Est, totam libero explicabo sed eligendi cumque delectus rerum!
+                        </p>
+                        <div class="stars mt-5 d-flex align-items-center justify-content-end">
+                        <img src="img/star.svg" alt="">
+                        <img src="img/star.svg" alt="">
+                        <img src="img/star.svg" alt="">
+                        <img src="img/star.svg" alt="">
+                        <img src="img/star.svg" alt="">
+                        </div>
+                    </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-4">
+                    <div class=" review-box box shadow p-4 rounded-3 me-4">
+                        <div class="info  d-flex align-items-center mb-2 ">
+                        <img class="rounded-circle  " src="img/user1.png" alt="">
+                        <div class="text me-2">
+                        <h5 class="fw-bold text-capitalize">  mohamed ali</h4>
+                        <span> Special Customer</span>
+                        </div>
+                        </div>
+                        <p class="text-white-50 mt-3">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe voluptas nobis error incidunt ipsam, velit sunt repellendus, nam omnis consectetur cumque. Est, totam libero explicabo sed eligendi cumque delectus rerum!
+                        </p>
+                        <div class="stars mt-5 d-flex align-items-center justify-content-end">
+                        <img src="img/star.svg" alt="">
+                        <img src="img/star.svg" alt="">
+                        <img src="img/star.svg" alt="">
+                        <img src="img/star.svg" alt="">
+                        <img src="img/star.svg" alt="">
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                </div>
+            </section>
+        <!-- ed reviews  -->
+        <!-- start footer -->
+        <footer id="fot">
+            <div class="container pt-5 pb-3 text-center text-white-50  text-md-start">
+            <div class="row">
+                <div class="col-md-6 col-lg-4 mb-3" >
+                    <div class="info text-white-50">
+                        <div class="footerimg position-relative" style="height: 80px;">
+                            <img class="mb-4 footer-img"src="img/logo-gold.png" alt="">
+                        </div>
+                        <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. In similique eius repellendus eveniet blanditiis, sequi eu.</p>
+                        <div class="copyright">
+                        Created By <span class="info-span fw-bold" >SHERBENY</span>
+                        <div>&copy; 2022 - <span class="info-span fw-bold"> ANER</span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-2">
+                <div class="links">
+                    <h5 class="text-light">Links</h5>
+                    <ul class="list-unstyled lh-lg">
+                    <li>Home</li>
+                    <li>Our Services</li>
+                    <li>Testimonials</li>
+                    <li>Support</li>
+                    <li>Terms and Condition</li>
+                    </ul>
+                </div>
+                </div>
+                <div class="col-md-6 col-lg-2">
+                <div class="links">
+                    <h5 class="text-light">About Us</h5>
+                    <ul class="list-unstyled lh-lg">
+                    <li>Sign In</li>
+                    <li>Register</li>
+                    <li>About Us</li>
+                    <li>Blog</li>
+                    <li>Contact Us</li>
+                    </ul>
+                </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                <div class="contact">
+                    <h5 class="text-light">Contact Us</h5>
+                    <p class="lh-lg mt-3 mb-4">sit amet consectetur, adipisicing elit. A quidem harum vero ea similique et, reprehenderit veniam.</p>
+                    <a class="btn rounded-pill main-btn address  w-100 " href="#fot">ouraddress@gmail.com</a>
+                    <ul class="list-unstyled d-flex mt-5 ps-2 gap-3">
+                    <li>
+                        <a class="d-block text-light" href="#"><i class="fa-brands fa-lg rounded-circle p-2 fa-facebook facebook"></i></a>
+                    </li>
+                    <li>
+                        <a class="d-block text-light" href="#"><i class="fa-brands fa-lg rounded-circle p-2 fa-twitter twitter"></i></a>
+                    </li>
+                    <li>
+                        <a class="d-block text-light" href="#"><i class="fa-brands fa-lg rounded-circle p-2 fa-linkedin linkedin"></i></a>
+                    </li>
+                    <li>
+                        <a class="d-block text-light" href="#"><i class="fa-brands fa-lg rounded-circle p-2 fa-youtube youtube"></i></a>
+                    </li>
+                    </ul>
+                </div>
+                </div>
+            </div>
+            </div>
+        </footer>
+        <!-- end footer -->
+        <script src="js/addToCart.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/all.min.js"></script>
+    </body>
+</html>
